@@ -1,0 +1,4 @@
+JS工作NOTE：
+
+**	parseInt() 函数可解析一个字符串,并返回一个整数
+		语法 parseInt(string, radix) 
