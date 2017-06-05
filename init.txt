@@ -2,3 +2,8 @@ JS工作NOTE：
 
 **	parseInt() 函数可解析一个字符串,并返回一个整数
 		语法 parseInt(string, radix) 
+**	createElement() 方法可创建元素节点。操作XML DOM。
+		语法: createElement(name) 参数描述 name 字符串值
+**	forward() 方法可加载历史列表中的下一个 URL。
+		调用该方法的效果等价于点击前进按钮或调用 history.go(1)。
+		语法 history.forward()
