@@ -7,3 +7,10 @@ JS工作NOTE：
 **	forward() 方法可加载历史列表中的下一个 URL。
 		调用该方法的效果等价于点击前进按钮或调用 history.go(1)。
 		语法 history.forward()
+**	.offsetWidth 是对象的可见宽度,包滚动条等边线,会随窗口的显示大小改变 clientWidth、offsetWidth、clientHeight
+**	visibility 属性规定元素是否可见
+		visibility:hidden; 不可见
+**	box-shadow: h-shadow v-shadow blur spread color inset;
+		box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色
+**	text-shadow: h-shadow v-shadow blur color;
+		X轴偏移量 Y轴偏移量 模糊距离 阴影颜色
