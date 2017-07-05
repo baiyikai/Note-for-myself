@@ -1,0 +1,102 @@
+css display属性：
+	默认值：inline：内联元素,一行显示（可以解决ie6 3像素bug）
+	none：不显示
+	block:块级元素
+	inline-block：行内块元素，类似于用了float的列表（可以解决ie6 3像素bug）
+	list-item：列表显示
+	run-in:根据上下文作为块级元素和内联元素显示
+	table：块级表格，类似<table>
+	inline-table:内联表格，类似<table>
+	table-row-group：作为一个或多个行的分组显示，类似<tbody>
+	table-header-group：作为一个或多个行的分组显示，类似<thead>
+	table-row：作为一个表格行显示（类似 <tr>）。
+	table-column-group：作为一个或多个列的分组来显示（类似 <colgroup>）。
+	table-column：作为一个单元格列显示（类似 <col>）
+	table-cell：作为一个表格单元格显示（类似 <td> 和 <th>）
+	table-caption：作为一个表格标题显示（类似 <caption>）
+	
+	
+	
+如果这是display：inline-block，需要注意：
+	vertical-align 属性会影响到 inline-block 元素，你可能会把它的值设置为 top 。
+	需要设置每一列的宽度
+	如果HTML源代码中元素之间有空格，那么列与列之间会产生空隙
+	
+#main {
+  max-width: 600px;
+  margin: 0 auto; 
+}
+	使用 max-width 替代 width 可以使浏览器更好地处理小窗口的情况。
+	所有的主流浏览器包括IE7+在内都支持 max-width 
+ 
+box-sizing属性
+	当你设置一个元素为 box-sizing: border-box; 时，此元素的内边距和边框不再会增加它的宽度。
+	支持IE8+
+	* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+Float 可用于实现文字环绕图片
+	img {
+	  float: right;
+	  margin: 0 0 1em 1em;
+	}
+	此时图片容易溢出当前外部div
+	可在外部div设置
+	.clearfix {
+	  overflow: auto;
+	  zoom: 1;（支持IE6）
+	}
+响应式布局
+	(当页面大于768px，小于959px时)
+	@media screen and (min-width: 768px) and (max-width: 959px){
+		.box{float:left;}
+	}
+column，文字多列布局
+	不被IE9及以下和Opera Mini支持
+	.three-column {
+	  padding: 1em;
+	  -moz-column-count: 3;
+	  -moz-column-gap: 1em;
+	  -webkit-column-count: 3;
+	  -webkit-column-gap: 1em;
+	  column-count: 3;
+	  column-gap: 1em;
+	}
+flexbox布局
+	.container {
+	  display: -webkit-flex;
+	  display: flex;
+	}
+	.initial {
+	  -webkit-flex: initial;
+			  flex: initial;
+	  width: 200px;
+	  min-width: 100px;
+	}
+	.none {
+	  -webkit-flex: none;
+			  flex: none;
+	  width: 200px;
+	}
+	.flex1 {
+	  -webkit-flex: 1;
+			  flex: 1;
+	}
+	.flex2 {
+	  -webkit-flex: 2;
+			  flex: 2;
+	}
+	
+	
+使用 Flexbox 的居中布局
+	.vertical-container {
+	  height: 300px;
+	  display: -webkit-flex;
+	  display:         flex;
+	  -webkit-align-items: center;
+			  align-items: center;
+	  -webkit-justify-content: center;
+			  justify-content: center;
+	}

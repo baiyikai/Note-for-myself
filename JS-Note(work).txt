@@ -14,3 +14,12 @@ JS工作NOTE：
 		box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色
 **	text-shadow: h-shadow v-shadow blur color;
 		X轴偏移量 Y轴偏移量 模糊距离 阴影颜色
+**	if判断条件：
+	判断为否：
+		1.已定义的变量/对象 未赋值
+		2.字符串为空
+		3.布尔值为false
+		4.数值为0
+		5.null或undefined
+		6.函数：不加括号，未定义为否;加括号，根据函数返回值
+		7.对象属性，同变量
